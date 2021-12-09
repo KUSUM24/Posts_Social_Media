@@ -128,6 +128,7 @@ function App() {
         userList.forEach((user) => {
           if (user.id == post.userId) {
             setUpdateName(user.name);
+            console.log(user.name, "new checking");
           }
         });
       }

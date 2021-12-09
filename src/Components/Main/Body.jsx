@@ -3,6 +3,7 @@ import { Card } from "react-bootstrap";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import ThumbDownAltIcon from "@material-ui/icons/ThumbDownAlt";
 import { ThumbDownAlt } from "@material-ui/icons";
+import "../../Common/styles/custom.css";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
 import {
@@ -40,14 +41,14 @@ export const Body = ({ statusDisplay }) => {
     return (
       <>
         <Card
-          className="text-center m-4 w-75"
+          className="card-main text-center m-4"
           style={{ boxShadow: "5px 5px 10px rgb(131, 130, 130)" }}
         >
           <Card.Header className="card-header bg-dark text-white">
             <b>{data.title} </b>
           </Card.Header>
           <Card.Body>{data.body}</Card.Body>
-          <Card.Footer className="d-flex justify-content-between align-items-center">
+          <Card.Footer className="footer-card d-flex justify-content-between align-items-center">
             <div className="d-flex">
               <div
                 className={`${
@@ -68,7 +69,7 @@ export const Body = ({ statusDisplay }) => {
                 <ThumbDownAlt />
               </div>
             </div>
-            <b className="d-flex ">
+            <b className="author-name d-flex ">
               By{" "}
               <div className="mx-2" style={{ textDecoration: "underline" }}>
                 {userList.map((user) => {

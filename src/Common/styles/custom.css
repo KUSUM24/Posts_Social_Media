@@ -1,0 +1,18 @@
+.card-main {
+  width: 50%;
+}
+
+@media screen and (max-width: 850px) {
+  .card-main {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer-card {
+    flex-direction: column;
+    padding-top: 0% !important;
+  }
+  .author-name {
+    margin-bottom: 3%;
+  }
+}

@@ -15,3 +15,7 @@ This is a basic CRUD(Create, Read, Update and Delete) Application where the user
 
 - Deployed Project on Github: https://github.com/KUSUM24/Posts_Social_Media
 - Hosted Link:
+
+## Contributing:
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

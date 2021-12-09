@@ -2,6 +2,7 @@ import React, { useContext, useRef } from "react";
 import { Nav, Navbar, Form, FormControl, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { SearchContext } from "../App";
+import { ThumbDownAlt } from "@material-ui/icons";
 import "./styles/header.css";
 
 export const Header = () => {
@@ -10,7 +11,7 @@ export const Header = () => {
   return (
     <Navbar className="header-main" expand="lg">
       <Navbar.Brand className="heading" href="/Posts_Social_Media">
-        <b>CRUD Application</b>
+        <b>Posts Social Media</b>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="collapse">
@@ -46,7 +47,10 @@ export const Header = () => {
               cursor: "pointer",
             }}
           >
-            Disliked Posts
+            {/* <div className="d-flex align-items-start"> */}{" "}
+            {/* <ThumbDownAlt /> */}
+            <div>Disliked Posts</div>
+            {/* </div> */}
           </Link>
           <Link
             to="/Posts_Social_Media"

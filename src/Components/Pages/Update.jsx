@@ -13,7 +13,7 @@ export const Update = () => {
   const history = useHistory();
   const handleUpdateData = (event) => {
     event.preventDefault();
-    history.push("/CRUD_Application");
+    history.push("/Posts_Social_Media");
     handleUpdateDetails(name, title, body, updatePost.id);
   };
   return (
@@ -72,7 +72,7 @@ export const Update = () => {
                 <Button type="submit">UPDATE</Button>
                 <Button
                   onClick={() => {
-                    history.push("/CRUD_Application");
+                    history.push("/Posts_Social_Media");
                   }}
                   className="btn btn-dark"
                 >
