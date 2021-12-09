@@ -47,13 +47,10 @@ export const Header = () => {
               cursor: "pointer",
             }}
           >
-            {/* <div className="d-flex align-items-start"> */}{" "}
-            {/* <ThumbDownAlt /> */}
             <div>Disliked Posts</div>
-            {/* </div> */}
           </Link>
           <Link
-            to="/Posts_Social_Media"
+            to="/"
             style={{
               textDecoration: "none",
               color: "black",
