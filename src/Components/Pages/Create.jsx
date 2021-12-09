@@ -14,7 +14,7 @@ export const Create = () => {
 
   const handlePostDetails = (event) => {
     event.preventDefault();
-    history.push("/CRUD_Application");
+    history.push("/Posts_Social_Media");
     handleCreate(name, title, body);
   };
   return (
@@ -37,7 +37,7 @@ export const Create = () => {
           <Card.Body>
             <Form onSubmit={(e) => handlePostDetails(e)}>
               <div className="row">
-                {/* <div className="form-group col-md-6 ">
+                <div className="form-group col-md-6 ">
                   <label>Creator Name</label>
 
                   <Form.Control
@@ -47,7 +47,7 @@ export const Create = () => {
                     onChange={(value) => setName(value.target.value)}
                     required
                   />
-                </div> */}
+                </div>
               </div>
               <div className="form-group col-md-6">
                 <label>Title</label>

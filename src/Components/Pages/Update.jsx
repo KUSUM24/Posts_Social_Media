@@ -38,10 +38,9 @@ export const Update = () => {
                   <label>Creator Name</label>
                   <Form.Control
                     className="my-2"
-                    // placeholder={"Name"}
                     value={name}
                     onChange={(value) => setName(value.target.value)}
-                    required
+                    readOnly
                   />
                 </div>
                 <div className="form-group col-md-6">
@@ -49,7 +48,6 @@ export const Update = () => {
 
                   <Form.Control
                     className="my-2"
-                    // placeholder="Title"
                     value={title}
                     onChange={(value) => setTitle(value.target.value)}
                     required
@@ -62,7 +60,6 @@ export const Update = () => {
                   as="textarea"
                   rows={3}
                   className="my-2"
-                  // placeholder="Body"
                   value={body}
                   onChange={(value) => setBody(value.target.value)}
                   required

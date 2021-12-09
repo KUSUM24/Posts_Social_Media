@@ -10,14 +10,14 @@ export const Header = () => {
   const searchRef = useRef();
   return (
     <Navbar className="header-main" expand="lg">
-      <Navbar.Brand className="heading" href="/Posts_Social_Media">
+      <Navbar.Brand className="heading" href="/">
         <b>Posts Social Media</b>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="collapse">
         <Nav className="mr-auto">
           <Link
-            to="/Posts_Social_Media/create"
+            to="/create"
             style={{
               textDecoration: "none",
               color: "black",
@@ -28,7 +28,7 @@ export const Header = () => {
             Create a post
           </Link>
           <Link
-            to="/Posts_Social_Media/liked"
+            to="/liked"
             style={{
               textDecoration: "none",
               color: "black",
@@ -39,7 +39,7 @@ export const Header = () => {
             Liked Posts
           </Link>
           <Link
-            to="/Posts_Social_Media/disliked"
+            to="/disliked"
             style={{
               textDecoration: "none",
               color: "black",
@@ -53,7 +53,7 @@ export const Header = () => {
             {/* </div> */}
           </Link>
           <Link
-            to="/Posts_Social_Media"
+            to=""
             style={{
               textDecoration: "none",
               color: "black",
