@@ -53,7 +53,7 @@ export const Header = () => {
             {/* </div> */}
           </Link>
           <Link
-            to="/"
+            to="/Posts_Social_Media"
             style={{
               textDecoration: "none",
               color: "black",
