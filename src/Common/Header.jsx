@@ -53,7 +53,7 @@ export const Header = () => {
             {/* </div> */}
           </Link>
           <Link
-            to=""
+            to="/"
             style={{
               textDecoration: "none",
               color: "black",
